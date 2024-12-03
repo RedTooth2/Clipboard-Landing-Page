@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bai Jamjuree';
+  line-height: 26px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 475px;
+}
+
+header {
+  background: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 15rem;
+  padding-bottom: 2rem;
+}
+
+header img {
+  height: 100px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+}
+
+.title h1 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.title p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  max-width: 35rem;
+  margin-bottom: 2.5rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btns button {
+  background: salmon;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.15s;
+}
+
+.btns button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.btns .ios-download {
+  background: hsl(171, 66%, 44%);
+}
+
+.btns .mac-download {
+  background: hsl(233, 100%, 69%);
+}
+
+.track-snippets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.track-snippets h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1em;
+}
+
+.track-snippets .clipboard-text {
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  max-width: 40rem;
+  margin-bottom: 3rem;
+}
+
+.monitor-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7rem;
+  margin-right: 18rem;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.text h3 {
+  color: hsl(210, 10%, 33%);
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  color: hsl(201, 11%, 66%);
+  max-width: 22rem;
+}
+
+.access-clipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.access-clipboard h1 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 2rem;
+}
+
+.access-clipboard p {
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  font-weight: 400;
+  max-width: 40rem;
+  margin-bottom: 5rem;
+}
+
+.workflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.workflow h1 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1.5rem;
+}
+
+.workflow .tool-productivity {
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 5rem;
+}
+
+.workflow-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 8rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content img {
+  margin-bottom: 2rem;
+}
+
+.content h2 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1rem;
+}
+
+.content p {
+  text-align: center;
+  max-width: 21rem;
+}
+
+.eyes {
+  margin-bottom: 1.7rem;
+}
+
+.company {
+  display: flex;
+  flex: row;
+  align-items: center;
+  gap: 8rem;
+  margin-bottom: 8rem;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 16rem;
+}
+
+.end h1 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.end p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  width: 40rem;
+  margin-bottom: 2.5rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer {
+  display: flex;
+  padding: 2rem 10rem;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  background-color: hsl(0, 0%, 93%);
+  left: 0;
+  right: 0;
+}
+
+footer img {
+  height: 50px;
+  margin-right: 5rem;
+}
+
+footer .shortcuts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 4rem;
+  color: hsl(210, 10%, 33%);
+  font-size: 1.2rem;
+}
+
+footer .shortcuts p {
+  transition: 0.15s;
+}
+
+footer .shortcuts p:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.social-media-link {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.social-media-link i {
+  transition: 0.15s;
+}
+
+.social-media-link i:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+@media (max-width: 990px) {
+  .btns {
+    flex-direction: column;
+  }
+
+  button {
+    width: 50%;
+  }
+
+  .monitor-text {
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+  }
+
+  .monitor-text img {
+    height: 250px;
+  }
+
+  .access-clipboard img {
+    height: 250px;
+    margin-bottom: 5rem;
+  }
+
+  .workflow .workflow-content {
+    flex-direction: column;
+  }
+
+  .company {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-top: 8rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .footer-content img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  footer .shortcuts {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .end {
+    margin-bottom: 30rem;
+  }
+
+  .social-media-link {
+    gap: 2rem;
+  }
+}
